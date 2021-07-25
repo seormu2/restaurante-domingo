@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroPersonas"
+    android:gravity="center"
+    android:background="@color/durazno">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="120sp"
+                android:layout_height="100sp"
+                android:src="@drawable/icono"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Food Delivery"
+                android:textColor="@color/gris_oscuro"
+                android:textSize="22sp"></TextView>
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:hint=" Nombre"
+                android:padding="15sp"
+                android:textColor="@color/gris_medio"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:drawableLeft="@drawable/ic_baseline_person_24"></EditText>
+
+            <EditText
+                android:id="@+id/txtEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_unfold_more_24"
+                android:fontFamily="@font/poppins"
+                android:hint=" Edad"
+                android:inputType="number"
+                android:padding="15sp"
+                android:textColor="@color/gris_medio"
+                android:textSize="16sp"></EditText>
+
+            <EditText
+                android:id="@+id/txtCiudad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:hint=" Ciudad"
+                android:padding="15sp"
+                android:textColor="@color/gris_medio"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/ic_baseline_edit_location_24"></EditText>
+
+            <EditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:hint=" Correo"
+                android:padding="15sp"
+                android:textColor="@color/gris_medio"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/ic_baseline_email_24"></EditText>
+
+            <EditText
+                android:id="@+id/txtContrasenia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:hint=" Contraseña"
+                android:padding="15sp"
+                android:textColor="@color/gris_medio"
+                android:textSize="16sp"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_baseline_vpn_key_24"></EditText>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="Registrate"
+                android:textSize="16sp"
+                android:onClick="registro"></Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
